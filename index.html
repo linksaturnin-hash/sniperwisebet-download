@@ -1,1 +1,286 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SniperWiseBet 4.2 - Téléchargement Officiel</title>
+    <style>
+        /* --- RESET & BASE --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: #050505; color: #ffffff; overflow-x: hidden; }
+        
+        /* --- COLORS & VARS --- */
+        :root {
+            --primary: #10B981; /* Vert IB Chinois */
+            --primary-glow: rgba(16, 185, 129, 0.4);
+            --dark: #111827;
+            --darker: #000000;
+            --text-gray: #9CA3AF;
+            --alert: #EF4444;
+        }
+
+        /* --- TYPOGRAPHY --- */
+        h1, h2, h3 { text-transform: uppercase; letter-spacing: 1px; }
+        .highlight { color: var(--primary); text-shadow: 0 0 10px var(--primary-glow); }
+        .text-center { text-align: center; }
+        
+        /* --- LAYOUT --- */
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        section { padding: 40px 0; border-bottom: 1px solid #1F2937; }
+        
+        /* --- HERO SECTION --- */
+        .hero { text-align: center; padding: 60px 20px; background: radial-gradient(circle at center, #1F2937 0%, #050505 70%); }
+        .logo { font-size: 2.5rem; font-weight: 900; margin-bottom: 10px; display: inline-block; }
+        .subtitle { font-size: 1.2rem; color: var(--text-gray); margin-bottom: 30px; }
+        .badge-winrate { 
+            display: inline-block; 
+            background: rgba(16, 185, 129, 0.1); 
+            border: 1px solid var(--primary); 
+            padding: 8px 16px; 
+            border-radius: 50px; 
+            color: var(--primary); 
+            font-weight: bold; 
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        /* --- BUTTONS --- */
+        .btn-download {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 15px auto;
+            padding: 18px;
+            background: var(--primary);
+            color: #000;
+            font-weight: 900;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 0 20px var(--primary-glow);
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-download:hover { transform: scale(1.05); box-shadow: 0 0 30px var(--primary-glow); }
+        .btn-android { background: #3DDC84; color: #000; } /* Android Green */
+        .btn-ios { background: #fff; color: #000; } /* Apple White */
+        .btn-pwa { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+
+        /* --- TUTORIAL SECTION --- */
+        .tutorial-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            background: var(--dark);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary);
+        }
+        .step-number {
+            background: var(--primary);
+            color: #000;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .step-content h4 { color: #fff; margin-bottom: 5px; }
+        .step-content p { color: var(--text-gray); font-size: 0.9rem; line-height: 1.4; }
+
+        /* --- WHY DIRECT SECTION --- */
+        .why-direct { background: #0F1219; }
+        .feature-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .feature-card { background: var(--dark); padding: 20px; border-radius: 12px; text-align: center; border: 1px solid #374151; }
+        .feature-icon { font-size: 2rem; margin-bottom: 10px; }
+
+        /* --- FOOTER --- */
+        footer { text-align: center; padding: 40px 20px; color: #4B5563; font-size: 0.8rem; }
+        .legal-links a { color: #6B7280; text-decoration: none; margin: 0 10px; }
+        .legal-links a:hover { color: var(--primary); }
+
+        /* --- ANIMATIONS --- */
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+
+        /* --- MOBILE OPTIMIZATION --- */
+        @media (min-width: 768px) {
+            .feature-grid { grid-template-columns: 1fr 1fr 1fr; }
+            .hero { padding: 100px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div class="logo">SNIPER<span class="highlight">WISEBET</span> 4.2</div>
+        <div class="badge-winrate">🎯 TAUX DE RÉUSSITE : 90.2% (LIVE)</div>
+        <h1>L'IA QUI DOMINE LES PARIS SPORTIFS</h1>
+        <p class="subtitle">Accédez aux prédictions Ultra-Pro exclusives. Disponible uniquement en téléchargement direct.</p>
+        
+        <!-- Detection Script will show relevant buttons here -->
+        <div id="download-buttons">
+            <a href="https://votre-site.com/sniperwisebet-v4.2.apk" class="btn-download btn-android" id="btn-android">
+                🤖 TÉLÉCHARGER POUR ANDROID (.APK)
+            </a>
+            <a href="#" class="btn-download btn-pwa" onclick="showPWAGuide()">
+                🍏 INSTALLER SUR IPHONE (PWA)
+            </a>
+        </div>
+        <p style="font-size: 0.8rem; color: #6B7280; margin-top: 10px;">Version certifiée • Mis à jour le 19/09/2026</p>
+    </div>
+
+    <!-- TUTORIAL SECTION -->
+    <section class="container">
+        <h2 class="text-center" style="margin-bottom: 30px;">📥 COMMENT INSTALLER ?</h2>
+        
+        <!-- Android Steps -->
+        <div id="android-guide">
+            <div class="tutorial-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Cliquez sur le bouton vert ci-dessus</h4>
+                    <p>Téléchargez le fichier <strong>sniperwisebet-v4.2.apk</strong> sur votre téléphone.</p>
+                </div>
+            </div>
+            <div class="tutorial-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Autorisez l'installation</h4>
+                    <p>Si votre téléphone bloque, allez dans <strong>Paramètres > Sécurité</strong> et activez "Sources inconnues" pour votre navigateur.</p>
+                </div>
+            </div>
+            <div class="tutorial-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Installez et Ouvrez</h4>
+                    <p>Cliquez sur "Installer". Une fois fini, ouvrez l'application et connectez-vous à votre compte Elite.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- iOS Guide (Hidden by default) -->
+        <div id="ios-guide" style="display:none;">
+            <div class="tutorial-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h4>Ouvrez Safari</h4>
+                    <p>Rendez-vous sur cette page avec Safari (pas Chrome).</p>
+                </div>
+            </div>
+            <div class="tutorial-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Ajoutez à l'écran d'accueil</h4>
+                    <p>Cliquez sur le bouton <strong>"Partager"</strong> (carré avec flèche vers le haut) en bas de l'écran.</p>
+                </div>
+            </div>
+            <div class="tutorial-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h4>Choisissez "Sur l'écran d'accueil"</h4>
+                    <p>Nommez-la "SniperWiseBet" et validez. L'icône apparaîtra comme une vraie application !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY DIRECT SECTION -->
+    <section class="why-direct">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 30px;">⚡ POURQUOI LE TÉLÉCHARGEMENT DIRECT ?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Mises à jour Instantanées</h3>
+                    <p>Pas d'attente de validation Apple/Google. Recevez les nouveaux algorithmes en temps réel.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>Zéro Censure</h3>
+                    <p>Nos algorithmes sont trop puissants pour les stores. Nous restons libres et indépendants.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>100% Pour Vous</h3>
+                    <p>Aucune commission de 30% prise par les géants de la tech. Meilleurs gains pour nos utilisateurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ / SUPPORT -->
+    <section class="container">
+        <h2 class="text-center">❓ BESOIN D'AIDE ?</h2>
+        <p class="text-center" style="color: var(--text-gray); margin-bottom: 20px;">Notre équipe support est disponible 24/7.</p>
+        <div class="text-center">
+            <a href="https://t.me/SniperWiseBet_Support" style="color: var(--primary); font-weight: bold; font-size: 1.2rem; text-decoration: none;">
+                💬 CONTACTER LE SUPPORT TELEGRAM
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 IB Chinois Technologies. Tous droits réservés.</p>
+        <p>SniperWiseBet est un outil d'aide à la décision basé sur l'intelligence artificielle.</p>
+        <p style="color: #EF4444; margin-top: 10px;">⚠️ Les paris sportifs comportent des risques. Jouez avec modération. Interdit aux moins de 18 ans.</p>
+        <div class="legal-links" style="margin-top: 20px;">
+            <a href="#">Mentions Légales</a>
+            <a href="#">Politique de Confidentialité</a>
+            <a href="#">CGU</a>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DE DÉTECTION AUTOMATIQUE -->
+    <script>
+        function detectOS() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            const androidBtn = document.getElementById('btn-android');
+            const iosGuide = document.getElementById('ios-guide');
+            const androidGuide = document.getElementById('android-guide');
+
+            // Détection Android
+            if (/android/i.test(userAgent)) {
+                // Affiche uniquement le bouton Android et le guide Android
+                androidBtn.style.display = 'block';
+                document.querySelector('.btn-pwa').style.display = 'none';
+                iosGuide.style.display = 'none';
+                androidGuide.style.display = 'block';
+            } 
+            // Détection iOS
+            else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                // Cache le bouton Android, affiche le guide iOS
+                androidBtn.style.display = 'none';
+                document.querySelector('.btn-pwa').style.display = 'block';
+                iosGuide.style.display = 'block';
+                androidGuide.style.display = 'none';
+                
+                // Change le texte du bouton PWA pour être plus clair
+                document.querySelector('.btn-pwa').innerHTML = "🍏 AJOUTER À L'ÉCRAN D'ACCUEIL";
+            }
+            // Desktop ou autre
+            else {
+                // Montre les deux options par défaut
+            }
+        }
+
+        function showPWAGuide() {
+            alert("Pour iPhone : Cliquez sur le bouton Partager (carré avec flèche) en bas de Safari, puis choisissez 'Sur l'écran d'accueil'.");
+        }
+
+        // Lancer la détection au chargement
+        window.onload = detectOS;
+    </script>
+</body>
+</html>
